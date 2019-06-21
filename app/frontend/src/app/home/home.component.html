@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col s6">
+    <p>
+      List of events
+    </p>
+    <div class="collection">
+      <a class="collection-item" *ngFor="let event of eventsList">{{event.title}} <br>
+        {{[event.dateList]}} <br>
+        <a [attr.href]="['https://twitter.com/intent/tweet?text=I%20will%20attend%20to%20'+event.title+'%20@%20'+event.dateList]"
+          class="waves-effect waves-light btn"
+          target="_app">
+          Twitter
+        </a> &nbsp;
+        <a [routerLink]="['home/', event._id]" class="waves-effect waves-light btn">View</a>
+      </a>
+
+    </div>
+  </div>
+  <div class="col s6">
+    <p>
+      Featured events
+    </p>
+    <div class="collection">
+      <a class="collection-item" *ngFor="let event of eventsFeatured">{{event.title}} <br>
+        {{event.description}} <br>
+        {{event.location}} <br>
+        {{event.dateList}}
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col s12">
+    <p>
+      <a routerLink="/" class="waves-effect waves-light btn">
+        Back
+      </a>
+      Events
+    </p>
+  </div>
+
+  <div class="collection">
+    <div class="row">
+      <div class="input-field col s3">
+        Title: {{event.title}}
+      </div>
+      <div class="input-field col s9">
+        Description: {{event.description}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        Location: {{event.location}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        Date list: {{event.dateList}}
+      </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+        Imagen URL: {{event.imagenURL}}
+        </div>
+      </div>
+      <div class="row">
+          <div class="input-field col s12">
+              <img src="{{event.imagenURL}}">
+          </div>
+        </div>
+  </div>
