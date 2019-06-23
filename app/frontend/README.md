@@ -1,4 +1,4 @@
-# Rota01
+# frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
@@ -13,6 +13,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+\app\frontend\src\environments\[environment.ts]: file to set API Endpoint.
 
 ## Running unit tests
 
